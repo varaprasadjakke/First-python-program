@@ -1,18 +1,20 @@
+# Calculate gold price by ornament or pure rate (such as wastage,gst and hall mark charges clearly)
+
 print("Enter pure rate or ornament rate or by total.")
-print("1.Pure\n2.Ornament\n3.By Total\n4.Exit")
+print("1.By Pure Rate (24kt)\n2.By Ornament Rate (22kt)\n3.By Total\n4.Exit")
 
 
-hm=100
+hm=100 #hm = hall mark
 for i in range(50):
     choice=input("\nEnter Choice(1/2/3/4): ")
     if choice=="1":
         weight=float(input("\nEnter weight     : "))
-        purerate=int(input("Enter Pure Rate  : "))
+        purerate=int(input("Enter Pure Rate (24kt)  : "))
         p=int(input("Enter Percentage : "))
         print("\nTotal: ",round(((weight*(92+p)/100)*purerate)+hm))
     elif choice=="2":
         weight=float(input("\nEnter Weight            : "))
-        orn=int(input("Enter Ornament Rate     : "))
+        orn=int(input("Enter Ornament Rate (22kt)     : "))
         p=int(input("Enter Wastage Percentage: "))
         gst=3
         gold_rate=weight*orn
