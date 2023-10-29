@@ -1,4 +1,4 @@
-# Calculate gold price by ornament or pure rate (such as wastage,gst and hall mark charges clearly)
+# Calculate gold price by ornament or pure rate (wastage,gst and hall mark charges)
 
 print("Enter pure rate or ornament rate or by total.")
 print("1.By Pure Rate (24kt)\n2.By Ornament Rate (22kt)\n3.By Total\n4.Exit")
